@@ -1,0 +1,32 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "negrito",
+    "lastName": "webdesign",
+    "email": "negritowebdesignl@email.com",
+    "favoriteColor": "white",
+    "birthday": "01-01-2022"
+}
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/ HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "negrito",
+    "lastName": "webdesign",
+    "email": "negritowebdesignl@email.com",
+    "favoriteColor": "white",
+    "birthday": "01-01-2022"
+}
+
+
+###
+DELETE http://localhost:9000/api/users/63c49a793980bba3c4aedd92 HTTP/1.1
